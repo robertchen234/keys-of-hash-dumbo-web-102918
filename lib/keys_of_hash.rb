@@ -3,7 +3,7 @@ class Hash
   def keys_of(*arguments)
     arr = []
     self.each do |key, val|
-      if arg == val 
+      if arguments == val 
         arr << key 
       end 
     end
