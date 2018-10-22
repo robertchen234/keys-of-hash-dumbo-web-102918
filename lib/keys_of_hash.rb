@@ -15,8 +15,9 @@
 # end
 
 class Hash
-  array = []
+  
   def keys_of(*arguments)
+  array = []
     self.each do |k, v|
       if arguments.include?(v)
         array.push(k)
@@ -24,4 +25,5 @@ class Hash
     end
   return array
   end	 
+  
 end
