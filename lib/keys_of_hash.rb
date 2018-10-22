@@ -15,6 +15,7 @@
 # end
 
 class Hash
+  array = []
   def keys_of(*arguments)
     self.each do |k, v|
       if arguments.include?(v)
