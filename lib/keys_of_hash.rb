@@ -2,7 +2,7 @@ class Hash
   
   def keys_of(*arguments)
     arr = []
-    arguments.each do |arg|
+    self.each do |arg|
       arg.each do |key, val|
         if arg == val 
           arr << key 
@@ -14,16 +14,16 @@ class Hash
   
 end
 
-class Hash
+# class Hash
   
-  def keys_of(*arguments)
-  array = []
-    self.each do |k, v|
-      if arguments.include?(v)
-        array.push(k)
-      end
-    end
-  return array
-  end	 
+#   def keys_of(*arguments)
+#   array = []
+#     self.each do |k, v|
+#       if arguments.include?(v)
+#         array.push(k)
+#       end
+#     end
+#   return array
+#   end	 
   
-end
+# end
