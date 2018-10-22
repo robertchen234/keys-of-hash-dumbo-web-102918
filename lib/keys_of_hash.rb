@@ -4,7 +4,7 @@ class Hash
     arr = []
     arguments.each do |arg|
       arg.each do |key, val|
-        if val arg == val 
+        if arg == val 
           arr << key 
         end 
       end 
