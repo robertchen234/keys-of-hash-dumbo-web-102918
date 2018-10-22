@@ -2,11 +2,9 @@ class Hash
   
   def keys_of(*arguments)
     arr = []
-    self.each do |arg|
-      arg.each do |key, val|
-        if arg == val 
-          arr << key 
-        end 
+    self.each do |key, val|
+      if arg == val 
+        arr << key 
       end 
     end
     arr
