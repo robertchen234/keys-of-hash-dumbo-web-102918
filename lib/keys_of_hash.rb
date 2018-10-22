@@ -1,7 +1,5 @@
 class Hash
   def keys_of(arguments)
-    arguments.each do |key, value|
-      key
-    end
+    arguments.keys_of
   end
 end
